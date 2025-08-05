@@ -1,0 +1,25 @@
+{
+  "name": "workspace",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rspack build",
+    "check": "biome check --write",
+    "dev": "rspack dev",
+    "format": "biome format --write",
+    "preview": "rspack preview"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.6",
+    "@rspack/cli": "^1.4.11",
+    "@rspack/core": "^1.4.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@imagemagick/magick-wasm": "^0.0.35",
+    "@lit-app/state": "^1.0.0",
+    "lit": "^3.3.1",
+    "lit-portal": "^1.0.5"
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "lib": ["DOM", "ESNext"],
+        "target": "esnext",
+        "noEmit": true,
+        "skipLibCheck": true,
+
+        /* modules */
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "allowImportingTsExtensions": true,
+
+        /* type checking */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+
+        /* Lit */
+        "experimentalDecorators": true,
+        "useDefineForClassFields": false,
+
+        /* Paths */
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"],
+            "@assets/*": ["assets/*"],
+            "@components/*": ["src/components/*"],
+            "@stores/*": ["src/stores/*"]
+        }
+    },
+    "include": ["src"],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
+}
