@@ -1,15 +1,11 @@
-import { defineConfig } from "@rspack/cli";
-import { rspack, type SwcLoaderOptions } from "@rspack/core";
-import path, { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+const { defineConfig } = require("@rspack/cli");
+const { rspack } = require("@rspack/core");
+const path = require("node:path");
 
 // Target browsers, see: https://github.com/browserslist/browserslist
 const targets = ["last 2 versions", "> 0.2%", "not dead", "Firefox ESR"];
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-export default defineConfig({
+module.exports = defineConfig({
     entry: {
         main: "./src/index.ts",
     },
@@ -74,7 +70,7 @@ export default defineConfig({
                                 },
                                 target: "es2022",
                             },
-                        } satisfies SwcLoaderOptions,
+                        },
                     },
                 ],
             },
