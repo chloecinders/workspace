@@ -1,4 +1,4 @@
-import defaultBackground from "@assets/defaultBackground.png";
+import defaultBackground from "@assets/defaultBackground.webp";
 import { StateController } from "@lit-app/state";
 import settingsStore from "@stores/SettingsStore";
 import { css, html, LitElement, TemplateResult } from "lit";
